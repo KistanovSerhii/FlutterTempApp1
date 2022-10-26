@@ -50,18 +50,18 @@ android/app/src/profile/AndroidManifest.xml
 
 1. Contract.dart
 2. ObjApp.dart
--
+_
 3.1 ObjService.dart
 3.2 ServiceParametrs.dart
 3.3 Service.dart
 3.4 TypeConverter.dart
 3.5 ServiceApi.dart
-*
+!
 3.6 Repository.dart
--
+_
 4.1 FactoryApi.dart
 4.2 FactoryRepository.dart
 (5. ObjState.dart)
 6 FactoryState.dart
--
+_
 SomeView where initialize ObjState
