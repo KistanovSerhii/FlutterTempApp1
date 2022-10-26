@@ -1,0 +1,14 @@
+{
+    "blueState-message": "Bluetooth устройство %s",
+    "blueNotAvailable-message": "Bluetooth устройство недоступно! \n Пожалуйста включите bluetooth гаджета.",
+    "blueSearcher-title": "Bluetooth",
+    "bluePaired-title": "Paired devices",
+    "blueAvailable-title": "Available devices",
+    "blueName-lable": "Локальное Имя",
+    "buttonConnect-title": "ПОДКЛЮЧИТЬ",
+    "buttonDisconnect-title": "ОТКЛЮЧИТЬ",
+    "blueScanerBtnConnect": "Подключение",
+    "buttonOpen-title": "ОТКРЫТЬ",
+    "blueScanerBtnOn": "Искать",
+    "blueScanerBtnOff": "Стоп"    
+}
