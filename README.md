@@ -1,21 +1,51 @@
-# smart_chess_board
+# Простой пример использования http, bluetooth, provider, stateManager (by provider), clean code.
 
-A new Flutter project.
+#ВАЖНО
 
-## Getting Started
+В файлы (для Android):
 
-This project is a starting point for a Flutter application.
+    android/app/src/debug/AndroidManifest.xml
+    android/app/src/main/AndroidManifest.xml
+    android/app/src/profile/AndroidManifest.xml
 
-A few resources to get you started if this is your first Flutter project:
+Добавить разрешени:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smart_chess_board">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<uses-permission android:name="android.permission.BLUETOOTH" />  
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />  
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    ...
+
+В файл (для IOS)
+
+    -ios/Runner/info.plist
+
+Добавить разрешени:
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+
+	<key>NSBluetoothAlwaysUsageDescription</key>  
+	<string>Need BLE permission</string>  
+	<key>NSBluetoothPeripheralUsageDescription</key>  
+	<string>Need BLE permission</string>  
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>  
+	<string>Need Location permission</string>  
+	<key>NSLocationAlwaysUsageDescription</key>  
+	<string>Need Location permission</string>  
+	<key>NSLocationWhenInUseUsageDescription</key>  
+	<string>Need Location permission</string>
 
 
+# Clean Code
 
 Создаем файлы:
 
