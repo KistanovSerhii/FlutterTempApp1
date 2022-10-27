@@ -49,8 +49,8 @@
 
 Создаем файлы:
 
-    1. Contract.dart
-    2. ObjApp.dart
+    1.  ObjApp.dart
+    2.  Contract.dart
     3.1 ObjService.dart
     3.2 ServiceParametrs.dart
     3.3 Service.dart
