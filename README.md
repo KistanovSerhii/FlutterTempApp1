@@ -19,31 +19,26 @@ samples, guidance on mobile development, and a full API reference.
 
 Создаем файлы:
 
-1. Contract.dart
-2. ObjApp.dart
--
-3.1 ObjService.dart
-3.2 ServiceParametrs.dart
-3.3 Service.dart
-3.4 TypeConverter.dart
-3.5 ServiceApi.dart
-*
-3.6 Repository.dart
--
-4.1 FactoryApi.dart
-4.2 FactoryRepository.dart
-(5. ObjState.dart)
-6 FactoryState.dart
--
-SomeView where initialize ObjState
-    ...
-    в Application/home добавить: MultiProvider(
+    1. Contract.dart
+    2. ObjApp.dart
+    3.1 ObjService.dart
+    3.2 ServiceParametrs.dart
+    3.3 Service.dart
+    3.4 TypeConverter.dart
+    3.5 ServiceApi.dart
+    3.6 Repository.dart
+    4.1 FactoryApi.dart
+    4.2 FactoryRepository.dart
+    (5. ObjState.dart)
+    6 FactoryState.dart
+    
+    7. в Application/home добавить: MultiProvider(
     providers: [ChangeNotifierProvider<HomeScreenState>(create: (_) => HomeModuleDependency.homeState()),]
     ,child: HomeScreen())
     
-    ObjState добавить наследование extends ChangeNotifier и после КАЖДОГО изменения состояния вызвать notifyListeners();
+    8. ObjState добавить наследование extends ChangeNotifier и после КАЖДОГО изменения состояния вызвать notifyListeners();
     
-    В view-screen классе объявить переменную стейт (HomeScreenState? _homeScreenState;),
+    9. В view-screen классе объявить переменную стейт (HomeScreenState? _homeScreenState;),
     Инициализировать в BUILD _homeScreenState = Provider.of<HomeScreenState?>(context);
     Тогда обращение к значению так _homeScreenState!.someValue
     А методы вызывать только через остановку прослушивания Provider.of<HomeScreenState?>(context, listen: false)!.getSomeValue()
