@@ -76,7 +76,8 @@
 
 # For permission
 
-	В файл "android/app/build.gradle" необходимо установить версию 33:
+В файл "android/app/build.gradle" необходимо установить версию 33:
+
 	android {
     		compileSdkVersion 33 // по умолчанию там скорей всего установлено - compileSdkVersion flutter.compileSdkVersion (меняем на 33)
 		
