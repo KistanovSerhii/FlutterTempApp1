@@ -110,3 +110,7 @@
 Команда провайдеру о необходимости перестроить виджеты в билте consumer:
 	
 	notifyListeners() и вызывается она в стейт объектк.
+
+Language (в методе build класса Application) назначено расположение языков
+	
+	LocalJsonLocalization.delegate.directories = ['lib/common/i18n'];
