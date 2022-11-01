@@ -1,5 +1,5 @@
 name: smart_chess_board
-description: A new Flutter project.
+description: Smart chess board.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -31,9 +31,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-# it is giv you use it: import 'package:flutter_localizations/flutter_localizations.dart';    
+# it is giv you use it: import 'package:flutter_localizations/flutter_localizations.dart';  
   flutter_localizations:
     sdk: flutter
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -44,6 +45,7 @@ dependencies:
   adaptive_theme: ^3.1.1
   provider: ^6.0.4
   dio: ^4.0.6
+  permission_handler: ^10.2.0
 
 dev_dependencies:
   flutter_test:
@@ -61,7 +63,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -72,10 +73,10 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
-      - lib/assets/commons/closeboard.jpg
+  #   - lib/assets/closeboard.jpg
       - lib/i18n/
-#    - package:smart_chess_board/i18n/en_US.json
-#    - package:smart_chess_board/i18n/ru_RU.json
+  #   - package:smart_chess_board/lib/i18n/en_US.json
+  #   - package:smart_chess_board/lib/i18n/ru_RU.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
