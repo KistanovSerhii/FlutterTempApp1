@@ -114,3 +114,6 @@
 Language (в методе build класса Application) назначено расположение языков
 	
 	LocalJsonLocalization.delegate.directories = ['lib/common/i18n'];
+	ТАКОЙ ЖЕ путь должен быть указан в pubspec.yaml
+	  assets:
+      		- lib/common/i18n/
