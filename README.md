@@ -82,20 +82,30 @@
 		
 # Provider
 	
-	Инициализируем provider сразу в методе build корневого виджета, а в child провайдера инициализируем все остальное (тема, язык и т.д.)
-	Так вызываем метод стейт объекта БЕЗ перестройки виджета: Provider.of<StateHomeScreen>(context, listen: false).getAvailableDevices();
-	Так используем стейт там где хотим перестаивать по подписке на ChangeNotifier:
+Инициализируем provider 
+
+	сразу в методе build корневого виджета, а в child провайдера инициализируем все остальное (тема, язык и т.д.)
+	
+Так вызываем метод стейт объекта БЕЗ перестройки виджета:
+	
+	Provider.of<StateHomeScreen>(context, listen: false).getAvailableDevices();
+	
+Так используем стейт там где хотим перестаивать по подписке на ChangeNotifier:
+
 	Consumer<StateHomeScreen>(
-				builder: (context, homeStateData, child) {
-			      		if (homeStateData.blueDevices == null) {
-                        			return Container();
-                      			}
-                      			return Column(
-                          			crossAxisAlignment: CrossAxisAlignment.stretch,
-                          				children: homeStateData.blueDevices!.map((d) => Text(
-                                  				'id ${d.id.toString()} name ${d.name}',
-                                  				style: TextStyle(
-                                      				color: Theme.of(context).primaryColor)))
-                              					.toList());
-                    		})
-	Команда провайдеру о необходимости перестроить виджеты в билте consumer: notifyListeners() и вызывается она в стейт объектк.
+	builder: (context, homeStateData, child) {
+		if (homeStateData.blueDevices == null) {
+                	return Container();
+		}
+                return Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+		children: homeStateData.blueDevices!.map((d) => Text(
+                'id ${d.id.toString()} name ${d.name}',
+                style: TextStyle(
+                color: Theme.of(context).primaryColor)))
+                .toList());
+	})
+	
+Команда провайдеру о необходимости перестроить виджеты в билте consumer:
+	
+	notifyListeners() и вызывается она в стейт объектк.
