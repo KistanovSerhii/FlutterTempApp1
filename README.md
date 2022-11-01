@@ -79,3 +79,7 @@
 	В файл "android/app/build.gradle" необходимо установить версию 33:
 	android {
     		compileSdkVersion 33 // по умолчанию там скорей всего установлено - compileSdkVersion flutter.compileSdkVersion (меняем на 33)
+		
+# Provider
+	
+	Инициализируем provider сразу в методе build корневого виджета, а в child провайдера инициализируем все остальное (тема, язык и т.д.)
